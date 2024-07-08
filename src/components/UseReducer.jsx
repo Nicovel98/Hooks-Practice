@@ -25,16 +25,16 @@ export const UseReducer = () => {
         <div>
             <h2>Exercise Hook useReducer</h2>
             <hr />
-            <button onClick={() => dispatch({ type: 'increment' })}>
+            <button className='increment-button' onClick={() => dispatch({ type: 'increment' })}>
                 Increment
             </button>
-            <button onClick={() => dispatch({ type: 'decrement' })}>
+            <button className='decrement-button' onClick={() => dispatch({ type: 'decrement' })}>
                 Decrement
             </button>
-            <button onClick={() => dispatch({ type: 'reset' })}>
+            <button className='reset-button' onClick={() => dispatch({ type: 'reset' })}>
                 Reset
             </button>
-            <p>Count is {state.count}</p>
+            <p className='count-text'>Count is {state.count}</p>
         </div >
     )
 }
